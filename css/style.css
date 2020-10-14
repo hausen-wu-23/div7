@@ -1,7 +1,11 @@
 #cover{
-    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    color: white;
+    background-attachment: fixed;
 }
 
 #coverText{
@@ -17,3 +21,4 @@
 body{
     background-color: rgb(48, 48, 48);
 }
+    
