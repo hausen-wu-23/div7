@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,11 +20,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class = "collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link">Cool Button</a></li>
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#footer" class="nav-link">About Us</a></li>
                 </ul>
             </div>
         </nav>
+
         <div id="cover" class="container-fluid p-0">
             <div class="row h-100">
                 <div class="col-lg-6 col-md-12 my-auto coverText" id="coverText">
@@ -40,6 +42,12 @@
             <p id="descriptionText">
                 The 7th Panzer Division was an armored formation of the German Army in World War II. It participated in the Battle of France, the invasion of the Soviet Union, the occupation of Vichy France, and on the Eastern Front until the end of the war. The 7th Panzer Division is sometimes known by its nickname, Ghost Division.
             </p>    
+        </div> 
+
+        <div id="sl2" class="container-fluid min-vh-100">
+            <h2 id="comp">
+                The Composition of the Divison
+            </h2>    
         </div> 
 
         <div class="container-fluid p-0">
@@ -78,6 +86,41 @@
                 
             </div>
         </div>
+        <div id = "footer" class = "container-fluid bg-dark p-4" style="height: 500px;">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>
+                        Explore
+                    </h2>
+                    <nav class="navbar-dark">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="#sl2" style="font-size: 20px;">Composition</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l1">Pzkpfwg. II</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l2">Pzkpfwg. III</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+        </div>
+        <div id="backtotop">
+            <a href="#cover"><span class="fa fa-arrow-up" style="font-size:45px;color:white;"></span></a>
+        </div>
         <script>
             gsap.from("#coverArt",{
                 duration:1.8,
@@ -94,6 +137,13 @@
             gsap.from("#descriptionText",{
                 scrollTrigger: '#descriptionText',
                 duration:0.8,
+                delay:0.3,
+                opacity:0,
+                y: 100
+            })
+            gsap.from("#comp",{
+                scrollTrigger: '#comp',
+                duration:0.5,
                 delay:0.3,
                 opacity:0,
                 y: 100
@@ -125,6 +175,26 @@
                 delay:0.3,
                 opacity:0,
                 x: 100
+            })
+            // gsap.from("#backtotop",{
+            //     scrollTrigger:{
+            //         trigger:"#descriptionText",
+            //         toggleActions: "restart"
+            //     },
+            //     duration:0.3,
+            //     delay:0.3,
+            //     opacity:0,
+            //     y: 50
+            // })
+            gsap.from("#backtotop",{
+                scrollTrigger:{
+                    trigger:"#cover",
+                    toggleActions: "reverse restart reverse"
+                },
+                duration:0.3,
+                delay:0.3,
+                opacity:0,
+                y: 100
             })
         </script>
     </body>

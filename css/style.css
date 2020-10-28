@@ -9,6 +9,14 @@
     position: relative;
 }
 
+#backtotop {
+    position: fixed;
+    bottom: 5%;
+    right: 5%; 
+    display: block;
+}
+
+
 #sl1{
     height: 100vh;
     width: 100%;
@@ -19,6 +27,18 @@
     background-attachment: fixed;
     position: relative;
     text-align: start;
+}
+
+#sl2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/comp.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
 }
 
 #panzerii{
@@ -52,6 +72,17 @@
     font-size: 20px;
 }
 
+#comp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 45%;
+    padding: 3px;
+    font-size: 50px;
+}
+
 .coverText{
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -66,10 +97,16 @@
     padding: 3px;
 }
 
-
+.footer{
+    padding-bottom: 50px;
+}
 
 body{
     background-color: rgb(48, 48, 48);
     overflow-x: hidden;
 }
-    
+
+html {
+    scroll-behavior: smooth;
+}
+
