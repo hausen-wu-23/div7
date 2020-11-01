@@ -109,18 +109,16 @@
         <!-- slide 4 -->
         <div class="container-fluid p-0">
             <div class="row align-items-center">
-                <div class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12" id="l2">
-                    <h2 class="pl-3">Panzerkampfwagen III</h2>
-                    <h2 class="text-warning pl-3">(1939 – 1943)</h2>
+                <div class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12" id="l4">
+                    <h2 class="pl-3">Sturmgesch&uumltz III</h2>
+                    <h2 class="text-warning pl-3">(1940 – 1945)</h2>
                     <br />
-                    <p class="pl-3" style="font-size: 1.5rem;text-indent: 30px;">The Panzer III was designed with the protection against armour-piercing shells which was required for tanks to survive on a modern battlefield.</p>
+                    <p class="pl-3" style="font-size: 1.5rem;text-indent: 30px;">The Sturmgesch&uumltz III (StuG III) assault gun was Germany's most-produced fully tracked armoured fighting vehicle during World War II, and second-most produced German armored combat vehicle of any type after the Sd.Kfz. 251 half-track. It was built on the chassis of the proven Panzer III tank, replacing the turret with an armored, fixed superstructure mounting a more powerful gun. Initially intended as a mobile assault gun for direct-fire support for infantry, the StuG III was continually modified, and much like the later Jagdpanzer vehicles, was employed as a tank destroyer. </p>
                     <br />
-                    <p class="pl-3"  style="font-size: 1.5rem;text-indent: 30px;">Most tank versions of the Panzer III were armed with a 2 cm KwK 30 L/55 auto-cannon.This auto-cannon was based on the 2 cm FlaK 30 anti-aircraft gun, and was capable of firing at a rate of 600 rounds per minute (280 rounds per minute sustained).</p>
-                    <br />
-                    <a class="btn btn-primary ml-3" href="tanks/panzer-iii.html">Learn More</a>
+                    <a class="btn btn-primary ml-3" href="tanks/stug.html">Learn More</a>
                 </div>
-                <div class="col-xl-8 col-lg-7 col-md-12 order-lg-12 order-md-1 order-sm-1 order-1" id="r2">
-                    <img src="img/pzkpf3.jpg" style="width: 100%;" />
+                <div class="col-xl-8 col-lg-7 col-md-12 order-lg-12 order-md-1 order-sm-1 order-1" id="r4">
+                    <img src="img/stugiii.jpg" style="width: 100%;" />
                 </div>
                 
             </div>
@@ -147,6 +145,9 @@
                             <li style="text-indent: 15px;">
                                 <a class="nav-link" href="#l3">Sdkfz. 251</a>
                             </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l4">StuG. III</a>
+                            </li>
     
                         </ul>
                     </nav>
@@ -159,19 +160,22 @@
                     <nav class="navbar-dark">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="nav-link" href="https://en.wikipedia.org" style="font-size: 20px;">Wikipedia</a>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org" style="font-size: 20px;">Wikipedia</a>
                             </li>
                             <li style="text-indent: 15px;">
-                                <a class="nav-link" href="https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)">The Division</a>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)">The Division</a>
                             </li>
                             <li style="text-indent: 15px;">
-                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Panzer_II">Pzkpfwg. II</a>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Panzer_II">Pzkpfwg. II</a>
                             </li>
                             <li style="text-indent: 15px;">
-                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Panzer_III">Pzkpfwg. III</a>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Panzer_III">Pzkpfwg. III</a>
                             </li>
                             <li style="text-indent: 15px;">
-                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Sd.Kfz._251">Sdkfz. 251</a>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Sd.Kfz._251">Sdkfz. 251</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Sturmgesch%C3%BCtz_III">Stug. III</a>
                             </li>
                         </ul>
                     </nav>
@@ -193,7 +197,7 @@
                     <nav class="navbar-dark">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="nav-link text-info" href="bibliography.html" target="_blank" style="font-size: 20px;">Check Out the Dev Page!</a>
+                                <a class="nav-link text-info" href="https://github.com/hausen-wu-23/div7" target="_blank" style="font-size: 20px;">Check Out the Dev Page! </a>
                             </li>
                         </ul>
                     </nav>
@@ -269,6 +273,20 @@
             })
             gsap.from("#r3",{
                 scrollTrigger: '#r3',
+                duration:0.8,
+                delay:0.3,
+                opacity:0,
+                x: 100
+            })
+            gsap.from("#l4",{
+                scrollTrigger: '#l4',
+                duration:0.8,
+                delay:0.3,
+                opacity:0,
+                x: -100
+            })
+            gsap.from("#r4",{
+                scrollTrigger: '#l4',
                 duration:0.8,
                 delay:0.3,
                 opacity:0,

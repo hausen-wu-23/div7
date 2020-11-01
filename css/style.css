@@ -73,6 +73,16 @@
     background-attachment: fixed;
 }
 
+#stug{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/stugcover.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
 #descriptionText{
     position: absolute;
     top: 50%;
