@@ -17,6 +17,8 @@
 }
 
 
+
+
 #sl1{
     height: 100vh;
     width: 100%;
@@ -55,6 +57,16 @@
     height: 100vh;
     width: 100%;
     background-image: url(../img/pzkpf3cover.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#sdkfz{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/sdkfz251cover.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -110,3 +122,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
+a:hover {
+    text-decoration: none;
+  }
+  
+a:active {
+    text-decoration: none;
+}

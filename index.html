@@ -11,8 +11,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-        <title>Document</title>
+        <title>The 7th Panzer-Division</title>
     </head>
+    <!-- navbar -->
     <body class="text-white">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand"><img src="img/logo.png" alt="Logo" style="width:40px;"></a>
@@ -21,11 +22,11 @@
             </button>
             <div class = "collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#footer" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link">About This Project</a></li>
                 </ul>
             </div>
         </nav>
-
+        <!-- title card -->
         <div id="cover" class="container-fluid p-0">
             <div class="row h-100">
                 <div class="col-lg-6 col-md-12 my-auto coverText" id="coverText">
@@ -37,19 +38,19 @@
             </div>
                 
         </div>  
-
+        <!-- over view -->
         <div id="sl1" class="container-fluid min-vh-100">
             <p id="descriptionText">
                 The 7th Panzer Division was an armored formation of the German Army in World War II. It participated in the Battle of France, the invasion of the Soviet Union, the occupation of Vichy France, and on the Eastern Front until the end of the war. The 7th Panzer Division is sometimes known by its nickname, Ghost Division.
             </p>    
         </div> 
-
+        <!-- title card -->
         <div id="sl2" class="container-fluid min-vh-100">
             <h2 id="comp">
                 The Composition of the Divison
             </h2>    
         </div> 
-
+        <!-- slide 1 -->
         <div class="container-fluid p-0">
             <div class="row align-items-center">
                 <div class="col-xl-8 col-lg-7 col-md-12" id="l1">
@@ -68,6 +69,7 @@
             </div>
         </div>
         <br />
+        <!-- slide 2 -->
         <div class="container-fluid p-0">
             <div class="row align-items-center">
                 <div class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12" id="l2">
@@ -86,12 +88,51 @@
                 
             </div>
         </div>
-        <div id = "footer" class = "container-fluid bg-dark p-4" style="height: 500px;">
+        <br />
+        <!-- slide 3 -->
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col-xl-8 col-lg-7 col-md-12" id="l3">
+                    <img src="img/sdkfz251.jpg" style="width: 100%;" />
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-12" id="r3">
+                    <h2 class="pl-3">Sonderkraftfahrzeug 251</h2>
+                    <h2 class="pl-3 text-warning">(1939 - 1945)</h2>
+                    <br />
+                    <p class="pl-3" style="font-size: 1.5rem;text-indent: 30px;">The Sd.Kfz. 251 (Sonderkraftfahrzeug 251) half-track was a World War II German armored fighting vehicle designed by the Hanomag company, based on its earlier, unarmored Sd.Kfz. 11 vehicle. The Sd.Kfz. 251 was designed to transport the Panzergrenadier (German mechanized infantry) into battle. Sd.Kfz. 251s were the most widely produced German half-tracks of the war, with at least 15,252 vehicles and variants produced by seven manufacturers. </p>
+                    <br />
+                    <a class="btn btn-primary ml-3" href="tanks/sdkfz251.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- slide 4 -->
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12" id="l2">
+                    <h2 class="pl-3">Panzerkampfwagen III</h2>
+                    <h2 class="text-warning pl-3">(1939 – 1943)</h2>
+                    <br />
+                    <p class="pl-3" style="font-size: 1.5rem;text-indent: 30px;">The Panzer III was designed with the protection against armour-piercing shells which was required for tanks to survive on a modern battlefield.</p>
+                    <br />
+                    <p class="pl-3"  style="font-size: 1.5rem;text-indent: 30px;">Most tank versions of the Panzer III were armed with a 2 cm KwK 30 L/55 auto-cannon.This auto-cannon was based on the 2 cm FlaK 30 anti-aircraft gun, and was capable of firing at a rate of 600 rounds per minute (280 rounds per minute sustained).</p>
+                    <br />
+                    <a class="btn btn-primary ml-3" href="tanks/panzer-iii.html">Learn More</a>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-12 order-lg-12 order-md-1 order-sm-1 order-1" id="r2">
+                    <img src="img/pzkpf3.jpg" style="width: 100%;" />
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div id = "footer" class = "container-fluid bg-dark p-4">
             <div class="row">
-                <div class="col-lg-3">
-                    <h2>
+                <div class="col-lg-3 col-md-12">
+                    <h3>
                         Explore
-                    </h2>
+                    </h3>
                     <nav class="navbar-dark">
                         <ul class="navbar-nav">
                             <li>
@@ -103,23 +144,66 @@
                             <li style="text-indent: 15px;">
                                 <a class="nav-link" href="#l2">Pzkpfwg. III</a>
                             </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l3">Sdkfz. 251</a>
+                            </li>
     
                         </ul>
                     </nav>
 
                 </div>
-                <div class="col-lg-3">
-                    
+                <div class="col-lg-3 col-md-12">
+                    <h3>
+                        Wiki Sources
+                    </h3>
+                    <nav class="navbar-dark">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="https://en.wikipedia.org" style="font-size: 20px;">Wikipedia</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)">The Division</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Panzer_II">Pzkpfwg. II</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Panzer_III">Pzkpfwg. III</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="https://en.wikipedia.org/wiki/Sd.Kfz._251">Sdkfz. 251</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-lg-3">
-                    
+                <div class="col-lg-3 col-md-12">
+                    <h3>
+                        Journal Sources
+                    </h3>
+                    <nav class="navbar-dark">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="bibliography.html" target="_blank" style="font-size: 20px;">Read More</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-12">
+                    <h3 class="text-warning">More to Come Soon...</h3>
+                    <nav class="navbar-dark">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link text-info" href="bibliography.html" target="_blank" style="font-size: 20px;">Check Out the Dev Page!</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
+
+        <!-- back to top button -->
         <div id="backtotop">
-            <a href="#cover"><span class="fa fa-arrow-up" style="font-size:45px;color:white;"></span></a>
+            <a href="#cover" class="text-light"><span class="fa fa-arrow-up" style="font-size:45px;color:white;"></span>Home</a>
         </div>
         <script>
             gsap.from("#coverArt",{
@@ -176,16 +260,28 @@
                 opacity:0,
                 x: 100
             })
-            // gsap.from("#backtotop",{
-            //     scrollTrigger:{
-            //         trigger:"#descriptionText",
-            //         toggleActions: "restart"
-            //     },
-            //     duration:0.3,
-            //     delay:0.3,
-            //     opacity:0,
-            //     y: 50
-            // })
+            gsap.from("#l3",{
+                scrollTrigger: '#r3',
+                duration:0.8,
+                delay:0.3,
+                opacity:0,
+                x: -100
+            })
+            gsap.from("#r3",{
+                scrollTrigger: '#r3',
+                duration:0.8,
+                delay:0.3,
+                opacity:0,
+                x: 100
+            })
+            gsap.from("#footer",{
+                scrollTrigger:{
+                    trigger:"#footer"
+                },
+                duration:0.8,
+                delay:0.3,
+                opacity:0,
+            })
             gsap.from("#backtotop",{
                 scrollTrigger:{
                     trigger:"#cover",
