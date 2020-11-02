@@ -1,4 +1,4 @@
-# Informational Page on the 7th Panazer-Division
+# Informational Page on the 7th Panzer-Division
 
 ## Last commit 8a1e076
 
