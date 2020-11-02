@@ -1,7 +1,7 @@
 # Informational Page on the 7th Panazer-Division
----
-## Last commit 8a1e076
----
+
+### Last commit 8a1e076
+
 ### Upcoming Features:
 - [x] Summary and Overview
 - [x] Information on Sonderfahrzeug
